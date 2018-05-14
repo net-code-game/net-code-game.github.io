@@ -1,4 +1,4 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-@import "{{ site.theme }}", "base"
+@import "{{ site.theme }}", "base", "syntax"
