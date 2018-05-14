@@ -300,7 +300,7 @@ user <username>
 
 While `#ns.script.name()` is the most straightforward way to call a hardcoded script, its also possible to call a script from a string or variable
 
-When you call `#ns.script.name()`, it expands to `ns_call("script.name")()`. `ns_call("script.name")` returns a function object and does not call the function itself, so you may do var x = ns_call("script.name"); x()
+When you call `#ns.script.name()`, it expands to `ns_call("script.name")()`. `ns_call("script.name")` returns a function object and does not call the function itself, so you may do `var x = ns_call("script.name"); x()`
 
 You may additionally wish to use `ns_call("script.name")` directly in your code, which will work as expected
 
