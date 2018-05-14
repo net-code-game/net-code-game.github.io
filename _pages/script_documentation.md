@@ -19,7 +19,7 @@ function(context, args)
 
 ## Implemented scripts
 
-### cash
+## cash
 
 ```javascript
 #hs.cash.balance()
@@ -39,7 +39,7 @@ function(context, args)
     Steals cash from a target with a breached breach node
 ```
 
-### scripts
+## scripts
 
 ```javascript
 #fs.scripts.get_level({name:"user.scriptname"})
@@ -57,7 +57,7 @@ function(context, args)
     Optional: {array:1} or {sec:number}
 ```
 
-### msg
+## msg
 
 ```javascript
 #hs.msg.send({channel:"name", msg:"message"})
@@ -79,7 +79,7 @@ function(context, args)
     Takes 1 of: {join:channel} or {create:channel} or leave:channel
 ```
 
-### users
+## users
 
 ```javascript
 #ns.users.me()
@@ -87,7 +87,7 @@ function(context, args)
     Optional: {array:1}
 ```
 
-### item
+## item
 
 ```javascript
 #fs.item.steal({user:"target", idx:0})
@@ -123,7 +123,7 @@ function(context, args)
     Registers a bundle at idx:id to be run as host.arbitraryname()
 ```
 
-### nodes
+## nodes
 
 ```javascript
 #ls.nodes.manage()
@@ -132,10 +132,10 @@ function(context, args)
 
 #ls.nodes.view_log({user:"user", NID:id})
 
-    Optional {array:1}. Must have a clear breach path to the node in question
+    Optional: {array:1}. Must have a clear breach path to the node in question
 ```
 
-### net
+## net
     
     
 ```javascript
@@ -307,7 +307,7 @@ You may additionally wish to use `ns_call("script.name")` directly in your code,
 Example:
 
 ```javascript
-/this script is highsec due to hs_call
+this script is highsec due to hs_call
 function(c, a)
 {
 	return hs_call("i20k.highsec")(); dont forget the second set of ()s!
