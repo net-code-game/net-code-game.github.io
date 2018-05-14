@@ -1,1 +1,7 @@
-"hello"
+---
+layout: default
+---
+
+  {% for post in site.pages %}
+		<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+  {% endfor %}

@@ -1,1 +1,6 @@
 theme: jekyll-theme-midnight
+repository: net-code-game/net-code-game.github.io
+sass:
+  sass_dir: _sass
+include: ['_pages']
+highlighter: rouge
